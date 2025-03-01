@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .background-page {
+    background-image: url('../assets/Team_bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+    min-height: 100vh; /* Ensures it covers the full viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust size */
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px; /* Space between heading and cards */
+    color: black;
+  }
+  .team-content {
+  flex: 1; /* Makes the content take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
+
+  .team-content h1{
+    color: #00AEEF;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .profile-card {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Frame and image styling */
+  .profile-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00AEEF, #18284a);
+    padding: 10px;
+    border-radius: 50%;
+    margin: 20px auto;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .profile-image {
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Info section styling */
+  .profile-info {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .profile-title {
+    color: #00AEEF;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* LinkedIn Icon Styling */
+  .linkedin-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    font-size: 24px;
+    color: #0077B5; /* LinkedIn Blue */
+    transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .linkedin-icon i {
+    margin: auto;
+  }
+  
+  .linkedin-icon:hover {
+    transform: scale(1.2);
+    background: #0077B5;
+    color: white;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

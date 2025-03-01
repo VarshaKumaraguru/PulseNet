@@ -1,0 +1,116 @@
+/* Background Image */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../assets/chat_bg.png") no-repeat center center/cover;
+    position: relative;
+}
+
+.chat-text {
+    margin-top: 120px;
+}
+
+/* Chat Messages */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* This makes the box scrollable vertically */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 80%;
+    margin: 0 auto;
+    height: 570px; /* Set a fixed height or use a percentage based on the parent container */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.chat-box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Message Wrapper */
+.message-container {
+    display: flex;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Ensures text wraps */
+}
+
+/* User Message */
+.message-container.user {
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.chat-message.user {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 60%;
+    font-size: 1.3rem;
+    margin-right: 50px;
+    word-break: break-word; /* Breaks long words */
+    overflow-wrap: break-word; /* Ensures wrapping */
+}
+
+/* Bot Message */
+.message-container.bot {
+    justify-content: flex-start;
+}
+
+.chat-message.bot {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 60%;
+    font-size: 1.3rem;
+    margin-left: 50px;
+    word-break: break-word; /* Breaks long words */
+    overflow-wrap: break-word; /* Ensures wrapping */
+}
+
+/* Chat Input */
+.chat-input-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Input Field */
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    outline: none;
+    margin-right: 10px;
+}
+
+/* Send Button */
+.send-button {
+    border: none;
+    cursor: pointer;
+}
+
+.send-button img {
+    width: 30px;
+    height: 32px;
+    margin-top: 2px;
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Navbar Styles */
+.navbar {
+    background: #102a43;
+    background: linear-gradient(to right, #102A43, #1B3B5F);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;  /* Keeps navbar fixed */
+    top: 0;           /* Sticks navbar to the top */
+    left: 0;          /* Aligns navbar with the left edge */
+    width: 100%;      /* Ensures full-width */
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.logo-image {
+    height: 65px; /* Adjust the size as needed */
+    width: auto;
+    border-radius: 50%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Aligns links and button properly */
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a,
+.navbar ul li .signout-btn {  /* Apply same style to links and button */
+  position: relative; 
+  padding: 10px 15px; 
+  transition: all 0.3s ease-in-out;
+  color: #00AEEF; /* Default text color */
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

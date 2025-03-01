@@ -1,0 +1,119 @@
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.center-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex: 1;
+}
+
+.right-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.ecg-button {
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.ecg-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.ecg-button.visualize {
+  background-color: #28a745;
+  color: white;
+}
+
+.ecg-button.clear {
+  background-color: #dc3545;
+  color: white;
+}
+
+.ecg-button.summarize {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.summary-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.summary-table {
+  width: 80%; /* Reduce the width of the table */
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the table */
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 8px; /* Reduce padding to decrease space between columns */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px; /* Reduce font size */
+}
+
+.summary-table th {
+  background-color: #00AEEF;
+  color: white;
+  font-weight: bold;
+}
+
+.summary-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.graph-container {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  /* ECG Grid Background */
+  background-image: 
+    linear-gradient(to right, rgba(238, 143, 143, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(238, 143, 143, 0.4) 1px, transparent 1px),
+    linear-gradient(to right, rgba(238, 143, 143, 0.4) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(238, 143, 143, 0.4) 2px, transparent 2px);
+  
+  background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+}
+
+.graph-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

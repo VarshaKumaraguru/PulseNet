@@ -1,0 +1,6 @@
+wave,formula
+PR_Interval,features['avg_pr_interval']
+QRS_Duration,features['avg_qrs_duration']
+QT_Interval,features['avg_qt_interval']
+QTc_Interval,features['qt_corrected_ms']
+Heart_Rate,features['heart_rate']

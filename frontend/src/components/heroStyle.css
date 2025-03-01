@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    margin-top: 110px;
+    height: 90vh;
+    background: url("../assets/bg_home.jpg") no-repeat center center/cover;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text-box {
+    background: rgba(255, 255, 255, 0.1); /* White with transparency */
+    padding: 20px 30px;
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s; /* Delay before fade-in starts */
+    margin-top: -200px; /* Move the box higher */
+}
+
+.hero-text-box {
+  background: rgba(255, 255, 255, 0.1); /* White with transparency */
+  padding: 20px 30px;
+  border-radius: 10px; /* Rounded corners */
+  display: inline-block;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* Delay before fade-in starts */
+  margin-top: -1px; /* Move it lower */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly lower */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Button Styling */
+.hero-button {
+  background-color: #14213D; /* Same as text color */
+  color: white; /* Text color */
+  font-size: 21px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  margin-top: 40px; /* Increase spacing below hero-text-box */
+  transition: background 0.3s ease-in-out;
+  opacity: 0; /* Initially hidden */
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1s; /* Delay to sync with fade-in */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(30px); /* Start slightly lower */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Button Hover Effect */
+.hero-button:hover {
+  background-color: #1B263B; /* Slightly lighter shade on hover */
+}
+
+/* Hero Text Styles */
+.hero h1 {
+  color: #14213D;
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: -20px; /* Move the heading further up */
+}
+
+.hero h2 {
+  color: #1B263B;
+  font-size: 25px;
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 0 20px;
+  margin-top: -10px; /* Move the subheading further up */
+}
+
+.hero {
+  position: relative;
+  top: -30px; /* Moves the entire section upwards */
+}
